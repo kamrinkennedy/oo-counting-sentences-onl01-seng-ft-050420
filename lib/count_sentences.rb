@@ -14,7 +14,7 @@ class String
     self[-1] == "!" ? true : false
   end
 
-  def count_sentences
-    
-  end
+  def count_sentences(string)
+    string.split(Regexp.union(".", "?","!")).reject(&:empty?).length
+end
 end
