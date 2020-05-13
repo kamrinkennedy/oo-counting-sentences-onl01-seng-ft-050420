@@ -16,5 +16,5 @@ class String
 
   def count_sentences(string)
     string.split(Regexp.union(".", "?","!")).reject(&:empty?).length
-end
+  end
 end
